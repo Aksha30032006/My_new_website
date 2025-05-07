@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1597764692192-3c191cece1a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=60') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .login-container input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .app-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px green;
+  }
+  
+  h1 {
+    text-align: center;
+    color: green;
+  }
+  
+  .task-inputs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-inputs input,
+  .task-inputs select,
+  .task-inputs button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+  }
+  
+  #taskList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #taskList li {
+    background-color: #e6ffe6;
+    margin: 8px 0;
+    padding: 10px;
+    border-left: 5px solid green;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  #taskList li.due-soon {
+    border-left-color: red;
+    color: red;
+  }
+  
+  .logout {
+    float: right;
+    margin-bottom: 10px;
+    background-color: darkgreen;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
