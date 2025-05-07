@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Garden To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+  <div class="app-container">
+    <h1>🌻 My Garden Tasks</h1>
+    <button onclick="logout()" class="logout">Logout</button>
+
+    <div class="task-inputs">
+      <input type="text" id="taskInput" placeholder="Enter task...">
+      <select id="category">
+        <option>🌿 Planting</option>
+        <option>💧 Watering</option>
+        <option>🌞 Sunlight</option>
+        <option>🌾 Harvest</option>
+      </select>
+      <input type="date" id="dueDate">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
